@@ -145,7 +145,7 @@ echo '{"messages":[{"role":"user","content":"refactor this 5-file system"}]}' \
 
 ### Phase 2: Integration (TODO)
 - [ ] Get GitHub token for full hybrid
-- [ ] Integrate with Continue.dev
+- [x] ~~Integrate with Continue.dev~~ (REMOVED - direct API is faster/simpler)
 - [ ] Add VS Code extension config
 - [ ] Test in real coding workflows
 

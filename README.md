@@ -1,11 +1,21 @@
-# Copilot Bridge - 60-Second Demo
+# Copilot Bridge - Hybrid AI Routing System
 
 **Created:** October 19, 2025  
-**Purpose:** Hybrid routing proof of concept - cheap tasks go local, expensive go to GitHub
+**Purpose:** Route 70-90% of AI coding requests to local models at $0 cost
+
+## What This Is
+
+Direct Ollama API integration with:
+- Custom hybrid routing (LOCAL vs CLOUD)
+- KPI instrumentation (Prometheus metrics)
+- Meta-reasoning quality audit (R&G pipeline)
+- Zero middleware overhead
+
+**No Continue.dev dependency** - pure Python + Ollama API.
 
 ## Quick Demo (LOCAL-only version)
 
-Since we don't have immediate GitHub token access, let's prove the LOCAL routing works:
+Let's prove LOCAL routing works with direct Ollama calls:
 
 ### Terminal 1 - Start the bridge listener
 

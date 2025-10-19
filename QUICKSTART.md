@@ -100,8 +100,9 @@ Already installed if smoke test passed:
    | socat - TCP:localhost:11436
    ```
 
-3. **Integrate with Continue.dev:**
-   - Models already configured in `~/.continue/config.json`
+3. **Direct Ollama API Integration:**
+   - No Continue.dev needed - using direct httpx calls
+   - Zero middleware overhead
    - Use Ctrl+L in VS Code
    - Select model from dropdown
 

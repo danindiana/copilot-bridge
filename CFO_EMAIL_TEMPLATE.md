@@ -180,7 +180,7 @@ Result: $26/developer/month (40% savings)
 ### Approval Request
 
 **We request approval to**:
-1. ✅ Continue operating current system (already deployed, no action needed)
+1. ✅ Deploy instrumented bridge (1 hour setup, instant KPI visibility)
 2. ✅ Allocate 8 hours/month engineering time for optimization
 3. ❓ Budget $1,200 per 10 additional developers for GPU expansion (if M3 results validate projections)
 

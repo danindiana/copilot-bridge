@@ -1,8 +1,3 @@
-# Logs
-*.log
-bridge.log
-nohup.out
-
 # Python
 __pycache__/
 *.py[cod]
@@ -11,28 +6,19 @@ __pycache__/
 .Python
 env/
 venv/
-ENV/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+.venv/
+
+# Logs
+*.log
+logs/
+results/
+MEGA_SUMMARY_*.md
 
 # Secrets
-*.token
 .env
+*.token
+*.key
 secrets/
-GITHUB_TOKEN
 
 # IDE
 .vscode/
@@ -45,6 +31,16 @@ GITHUB_TOKEN
 .DS_Store
 Thumbs.db
 
-# Temporary files
-tmp/
+# Temp
 temp/
+tmp/
+*.tmp
+
+# Continue.dev (historical only, not production)
+.continue/
+
+# Prometheus data
+prometheus_data/
+
+# Docker
+.docker/

@@ -1,0 +1,13 @@
+# Python Dependencies for Copilot Bridge
+
+# Core HTTP client (async support)
+httpx>=0.27.0
+
+# Prometheus metrics collection
+prometheus-client>=0.20.0
+
+# Standard library (included in Python 3.10+, listed for clarity)
+# - asyncio: async/await support
+# - json: JSON parsing
+# - time: timing measurements
+# - dataclasses: structured data

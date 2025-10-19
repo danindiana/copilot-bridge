@@ -30,7 +30,7 @@ Map the **quality-vs-context efficiency frontier** for local AI models.
 
 **1,000 words** (Test #3):
 - All current content from proven_600word_context.txt (595 words)
-- + Detailed code snippets from proxy.py and demo_showcase.py (~400 words)
+- + Detailed code snippets from proxy.py and examples/demo_showcase.py (~400 words)
 - Focus: Architecture + implementation details
 
 **2,500 words** (Test #4):

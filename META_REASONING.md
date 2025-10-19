@@ -92,7 +92,7 @@ The audit model scores five dimensions:
 
 ```bash
 cd ~/copilot-bridge
-python3 rosencrantz_guildenstern.py
+python3 examples/rosencrantz_guildenstern.py
 ```
 
 Choose from example prompts or enter your own. The system will:

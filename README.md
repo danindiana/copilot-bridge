@@ -21,7 +21,7 @@ Let's prove LOCAL routing works with direct Ollama calls:
 
 ```bash
 cd ~/copilot-bridge
-socat TCP-LISTEN:11436,reuseaddr,fork EXEC:"./demo_local_only.py"
+socat TCP-LISTEN:11436,reuseaddr,fork EXEC:"./examples/demo_local_only.py"
 ```
 
 Leave this running.
@@ -130,7 +130,9 @@ echo '{"messages":[{"role":"user","content":"explain this 5-file refactor"}]}' \
 ## Files Created
 
 - `~/copilot-bridge/proxy.py` - Full hybrid routing (needs GITHUB_TOKEN)
-- `~/copilot-bridge/demo_local_only.py` - LOCAL-only demo (no token needed)
+- `~/copilot-bridge/examples/demo_local_only.py` - LOCAL-only demo (no token needed)
+- `~/copilot-bridge/examples/demo_showcase.py` - Interactive demos (8 examples)
+- `~/copilot-bridge/examples/rosencrantz_guildenstern.py` - Meta-reasoning quality audit
 
 ---
 
@@ -149,10 +151,10 @@ pkill socat
 
 ## Next Steps
 
-1. ✅ Prove LOCAL routing works (demo_local_only.py)
-2. Get GitHub token for full hybrid
-3. Integrate with Continue.dev config
-4. Add more routing rules
-5. Monitor savings
+1. ✅ Prove LOCAL routing works (examples/demo_local_only.py)
+2. ✅ Try interactive demos (examples/demo_showcase.py)
+3. Get GitHub token for full hybrid routing
+4. Add more routing rules to LOCAL_KEYWORDS
+5. Monitor savings with exporter.py
 
 Ready to test? Run Terminal 1 command above!

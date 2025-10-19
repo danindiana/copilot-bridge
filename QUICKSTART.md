@@ -15,14 +15,14 @@ Get up and running with local AI models in under 2 minutes!
 cd ~/copilot-bridge
 
 # Interactive demo menu
-python3 demo_showcase.py
+python3 examples/demo_showcase.py
 
 # Or run all demos
-python3 demo_showcase.py --all
+python3 examples/demo_showcase.py --all
 
 # Or run specific demo
-python3 demo_showcase.py 1    # Documentation
-python3 demo_showcase.py 5    # Code generation
+python3 examples/demo_showcase.py 1    # Documentation
+python3 examples/demo_showcase.py 5    # Code generation
 ```
 
 ## What Each Demo Does
@@ -41,7 +41,7 @@ python3 demo_showcase.py 5    # Code generation
 ## Example Output
 
 ```bash
-$ python3 demo_showcase.py 4
+$ python3 examples/demo_showcase.py 4
 
 ======================================================================
                       Demo 4: Question & Answer                       
@@ -64,14 +64,15 @@ reliable data transmission without these features.
 
 ```
 copilot-bridge/
-├── demo_showcase.py              # Interactive demo script ⭐
-├── demo_local_only.py            # Simple LOCAL routing
+├── examples/
+│   ├── demo_showcase.py          # Interactive demo script ⭐
+│   ├── demo_local_only.py        # Simple LOCAL routing
+│   ├── rosencrantz_guildenstern.py  # Meta-reasoning quality audit
+│   └── generate_mega_summary_32k.py # 32K context experiment
 ├── proxy.py                      # Full hybrid routing bridge
 ├── README.md                     # Main documentation
-├── DEMO_GUIDE.md                 # Demo usage guide
-├── PROOF_OF_CONCEPT_RESULTS.md   # Success metrics
 ├── QUICKSTART.md                 # This file!
-└── .gitignore                    # Git ignore rules
+└── FAQ.md                        # Frequently asked questions
 ```
 
 ## Requirements
@@ -86,7 +87,7 @@ Already installed if smoke test passed:
 
 1. **Try the interactive demo:**
    ```bash
-   python3 demo_showcase.py
+   python3 examples/demo_showcase.py
    ```
 
 2. **Test hybrid routing:**
@@ -131,5 +132,5 @@ Questions? Check:
 **You're ready to go! Start with the interactive demo.** 🎯
 
 ```bash
-python3 demo_showcase.py
+python3 examples/demo_showcase.py
 ```

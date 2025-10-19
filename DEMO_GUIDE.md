@@ -7,18 +7,21 @@ This script provides interactive demonstrations of local AI models in action.
 ### Interactive Mode (Default)
 ```bash
 cd ~/copilot-bridge
-python3 demo_showcase.py
+python3 examples/demo_showcase.py
 ```
 
 ### Run All Demos
 ```bash
-python3 demo_showcase.py --all
+## Running All Demos Sequentially
+
+```bash
+$ python3 examples/demo_showcase.py --all
 ```
 
 ### Run Specific Demo
 ```bash
-python3 demo_showcase.py 1    # Run demo #1 only
-python3 demo_showcase.py 5    # Run demo #5 only
+python3 examples/demo_showcase.py 1    # Run demo #1 only
+python3 examples/demo_showcase.py 5    # Run demo #5 only
 ```
 
 ## Available Demonstrations
@@ -67,7 +70,14 @@ python3 demo_showcase.py 5    # Run demo #5 only
 
 ### Interactive Menu
 ```bash
-$ python3 demo_showcase.py
+## Example Session
+
+```bash
+$ python3 examples/demo_showcase.py
+
+╔════════════════════════════════════════════════════════════════════╗
+║              OLLAMA LOCAL MODEL DEMO SHOWCASE                      ║
+╚════════════════════════════════════════════════════════════════════╝
 
 Available Demos:
   1. Generate Documentation (docstrings)
@@ -86,7 +96,7 @@ Select demo (0-9): 1
 
 ### Batch Run All
 ```bash
-$ python3 demo_showcase.py --all
+$ python3 examples/demo_showcase.py --all
 
 ********************************************************************
   LOCAL AI MODELS DEMONSTRATION
@@ -154,9 +164,9 @@ All demos run on **local Ollama instance**:
 - Each demo is independent
 - Results may vary slightly between runs
 
-## Customization
+## Customizing the Demos
 
-Edit `demo_showcase.py` to:
+Edit `examples/demo_showcase.py` to:
 - Change the Ollama server URL
 - Use different models
 - Add your own demo scenarios

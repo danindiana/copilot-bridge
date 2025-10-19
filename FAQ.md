@@ -198,8 +198,8 @@ docker-compose up -d   # Prometheus + Grafana stack
 Run the interactive demo:
 
 ```bash
-cd examples
-python3 demo_showcase.py
+cd ~/copilot-bridge
+python3 examples/demo_showcase.py
 ```
 
 Select any demo (e.g., #7 Type Hints). If you see output in 3-5 seconds with cost $0.00, it's working!

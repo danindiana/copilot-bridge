@@ -40,7 +40,7 @@ Thank you for your interest in contributing! This document provides guidelines f
 
 4. **Run tests**:
    ```bash
-   python3 demo_showcase.py
+   python3 examples/demo_showcase.py
    python3 test_instrumentation.py
    cd refactor-quality-tests && python3 test_samples.py
    ```
@@ -74,9 +74,9 @@ Thank you for your interest in contributing! This document provides guidelines f
 ### File Organization
 
 - **Core routing**: `proxy.py`, `proxy_instrumented.py`
-- **Meta-reasoning**: `rosencrantz_guildenstern.py`
+- **Meta-reasoning**: `examples/rosencrantz_guildenstern.py`
 - **Metrics**: `exporter.py`
-- **Demos/examples**: `demo_*.py` or `examples/`
+- **Demos/examples**: `examples/*.py`
 - **Tests**: `test_*.py` or `refactor-quality-tests/`
 - **Documentation**: `*.md` files
 
@@ -92,16 +92,13 @@ Thank you for your interest in contributing! This document provides guidelines f
    - Add tests if adding functionality
    - Update documentation if changing behavior
 
-3. **Test your changes**:
+2. **Test your changes:**
    ```bash
-   # Run all demos
-   python3 demo_showcase.py
+   # Run the demo showcase
+   python3 examples/demo_showcase.py
    
-   # Test instrumentation
+   # Run specific test
    python3 test_instrumentation.py
-   
-   # Test meta-reasoning
-   python3 rosencrantz_guildenstern.py
    ```
 
 4. **Commit with descriptive messages**:
@@ -141,8 +138,8 @@ Thank you for your interest in contributing! This document provides guidelines f
 - Consider performance impact
 
 ### Manual Testing Checklist
-- [ ] Run `demo_showcase.py` (all 8 demos)
-- [ ] Run `rosencrantz_guildenstern.py` (meta-reasoning)
+- [ ] Run `examples/demo_showcase.py` (all 8 demos)
+- [ ] Run `examples/rosencrantz_guildenstern.py` (meta-reasoning)
 - [ ] Run `test_instrumentation.py` (logging pipeline)
 - [ ] Check `refactor-quality-tests/` still work
 - [ ] Verify no crashes, reasonable output quality

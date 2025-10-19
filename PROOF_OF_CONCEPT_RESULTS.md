@@ -20,7 +20,7 @@ A **hybrid routing bridge** that intercepts AI coding requests and routes them i
 **Command:**
 ```bash
 echo '{"messages":[{"role":"user","content":"add a google-style docstring"}]}' \
-| python3 ~/copilot-bridge/demo_local_only.py
+| python3 ~/copilot-bridge/examples/demo_local_only.py
 ```
 
 **Result:**
@@ -96,12 +96,17 @@ qwen2.5 GPT-4
 - Keywords-based routing
 - Performance metrics
 
-### 2. `~/copilot-bridge/demo_local_only.py` (Demo version)
+### 2. `~/copilot-bridge/examples/demo_local_only.py` (Demo version)
 - LOCAL-only routing
 - No GitHub token needed
 - Proves the concept
 
-### 3. `~/copilot-bridge/README.md`
+### 3. `~/copilot-bridge/examples/demo_showcase.py` (Interactive demos)
+- 8 different use cases
+- Interactive menu
+- Shows response quality
+
+### 4. `~/copilot-bridge/README.md`
 - Documentation
 - Setup instructions
 - Usage examples
@@ -113,7 +118,7 @@ qwen2.5 GPT-4
 ### Quick Test (LOCAL-only)
 ```bash
 echo '{"messages":[{"role":"user","content":"add type hints"}]}' \
-| python3 ~/copilot-bridge/demo_local_only.py
+| python3 ~/copilot-bridge/examples/demo_local_only.py
 ```
 
 ### Full Bridge (with GitHub fallback)

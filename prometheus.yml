@@ -1,0 +1,23 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    cluster: 'copilot-bridge'
+    environment: 'production'
+
+scrape_configs:
+  # Bridge exporter metrics
+  - job_name: 'copilot-bridge'
+    static_configs:
+      - targets: ['exporter:8000']
+        labels:
+          service: 'bridge-exporter'
+
+  # Prometheus self-monitoring
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+# Alert rules (optional, requires alertmanager)
+# rule_files:
+#   - 'alerts.yml'
